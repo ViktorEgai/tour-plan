@@ -398,10 +398,6 @@ body {
   cursor: pointer;
 }
 
-.search__button:hover {
-  background-color: #fff;
-}
-
 .user {
   display: flex;
   align-items: center;

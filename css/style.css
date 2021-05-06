@@ -417,9 +417,13 @@ input {
   border: none;
   padding-left: 23px;
   padding-right: 75px;
-  color: #BDBDBD;
+  color: #333333;
   font-size: 12px;
   line-height: 15px;
+}
+
+.search__input ::placeholder {
+  color: #BDBDBD;
 }
 
 .search__button {
@@ -463,7 +467,6 @@ input {
 @media (max-width: 992px) {
   .container {
     max-width: 760px;
-    width: 92%;
   }
   .navbar-top {
     padding: 30px 0;
@@ -485,7 +488,6 @@ input {
 @media (max-width: 700px) {
   .container {
     max-width: 576px;
-    width: 92%;
   }
   .navbar-top {
     padding: 28px 0;

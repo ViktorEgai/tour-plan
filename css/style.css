@@ -422,7 +422,7 @@ input {
   line-height: 15px;
 }
 
-.search__input ::placeholder {
+.search__input::placeholder {
   color: #BDBDBD;
 }
 
@@ -472,7 +472,7 @@ input {
     padding: 30px 0;
   }
   .navbar__search {
-    margin-left: 5%;
+    margin-left: auto;
     width: 340px;
   }
   .navbar__logo {

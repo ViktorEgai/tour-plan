@@ -452,11 +452,11 @@ input {
   color: #333333;
   margin-left: 18px;
 }
-<<<<<<< HEAD
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    width: 92%;
   }
 }
 
@@ -517,6 +517,3 @@ input {
   }
 }
 /*# sourceMappingURL=style.css.map */
-=======
-/*# sourceMappingURL=style.css.map */
->>>>>>> 3e49c780da8d64ff362673bcd7c86a6389d6e983

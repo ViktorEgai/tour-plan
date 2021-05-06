@@ -16,7 +16,33 @@
     &-menu
       padding: 22px 0
       font-size: 12px
+      line-height: 15px
 @media (max-width:700px)
   .container
-    max-width: 560px
+    max-width: 576px
     width: 92%
+  .navbar
+    &-top
+      padding: 28px 0
+      &__menu-button
+        display: flex
+        flex-direction: column
+        border: none
+        width: 16px
+        height: 11px
+        justify-content: space-between
+        background-color: #fff
+        cursor: pointer
+        padding: 0
+    &__search
+      display: none
+    &-menu
+      display: none
+    &-user
+      display: none
+  .menu
+    &-button
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color

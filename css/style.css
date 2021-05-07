@@ -554,6 +554,7 @@ input {
 .rattings__count {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .rattings__five {
@@ -619,6 +620,32 @@ input {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .hotel {
+    padding-top: 5px;
+  }
+  .hotel-rattings {
+    display: none;
+  }
+  .hotel-text {
+    width: 100%;
+  }
+  .hotel-text__block {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .hotel-text__offer {
+    order: -1;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .hotel-text__stars {
+    flex-basis: auto;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .hotel-text__name {
+    flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

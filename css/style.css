@@ -343,6 +343,7 @@ template {
 
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -358,13 +359,16 @@ input {
   outline: none;
 }
 
+.navbar {
+  background-color: #fff;
+}
+
 .navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #fff;
 }
 
 .navbar-top__menu-button {
@@ -458,7 +462,6 @@ input {
 }
 
 .breadcrumb {
-  background-color: #F5FAFE;
   padding: 18px 0;
 }
 
@@ -482,6 +485,79 @@ input {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.hotel {
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+
+.hotel-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hotel-info__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.hotel-text__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hotel-text__stars {
+  margin-bottom: 4px;
+  flex-basis: 100%;
+}
+
+.hotel-text__name {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-text__offer {
+  margin-left: 14px;
+}
+
+.offer {
+  background-color: #EC1F46;
+  color: #fff;
+  padding: 4px 9px;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.rattings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: #EC1F46;
+  padding: 9px 7px;
+  border-radius: 4px;
+}
+
+.rattings__text {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.rattings__count {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.rattings__five {
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {

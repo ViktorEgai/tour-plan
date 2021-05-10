@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
  
@@ -9,8 +9,8 @@ const swiper = new Swiper('.swiper-container', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button__next',
-    prevEl: '.slider-button__prev',
+    nextEl: '.hotel-slider__button__next',
+    prevEl: '.hotel-slider__button__prev',
   },
 
 });

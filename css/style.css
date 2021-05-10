@@ -528,12 +528,16 @@ input, button {
   margin-left: 14px;
 }
 
+.hotel__slider {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
 .hotel-slider {
   width: 728px;
   height: 450px;
   border-radius: 8px;
   position: relative;
-  margin: 0;
 }
 
 .hotel-slider:after {

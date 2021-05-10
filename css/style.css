@@ -355,7 +355,7 @@ img {
   max-width: 100%;
 }
 
-input {
+input, button {
   outline: none;
 }
 
@@ -431,6 +431,7 @@ input {
 }
 
 .search__button {
+  padding-top: 4px;
   position: absolute;
   right: 0;
   top: 0;

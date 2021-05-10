@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -108,8 +109,39 @@
           <!-- /.hotel-rating -->
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <!-- Slider main container -->
+          <div class="hotel-grid__swiper swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/slide-1.jpg" alt="" class="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-2.jpg" alt="" class="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-3.jpg" alt="" class="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-4.jpg" alt="" class="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide-5.jpg" alt="" class="slide" />
+              </div>
+              <!-- Swiper buttons -->
+            </div>
+            <button class="slider-button slider-button__prev"></button>
+            <button class="slider-button slider-button__next"></button>
+          </div>
+          <!-- /.swiper-container -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

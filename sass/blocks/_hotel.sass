@@ -62,8 +62,9 @@
         margin-right: 18px
         right: 0
         background-image: url(../img/button-next.svg)
-  &__img
-    object-fit: cover
+    &__img
+      width: 100%
+      object-fit: cover
   &-grid
     display: flex
     justify-content: space-between
@@ -96,7 +97,6 @@
     font-weight: 700
   &__five
     font-size: 10px
-
 .booking-block
   background-color: $dark
   font-family: 'Nunito', sans-serif
@@ -111,7 +111,6 @@
   &__price
     display: flex
     flex-direction: column
-
   &__start
     font-weight: normal
     font-size: 10px
@@ -160,3 +159,8 @@
     border-radius: 4px
     font-weight: 600
     font-size: 14px
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
+  overflow: hidden

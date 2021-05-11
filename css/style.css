@@ -359,6 +359,13 @@ input, button {
   outline: none;
 }
 
+.button {
+  background-color: #EC1F46;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -438,8 +445,6 @@ input, button {
   height: 100%;
   width: 65px;
   border: none;
-  background-color: #EC1F46;
-  cursor: pointer;
 }
 
 .user {
@@ -530,7 +535,7 @@ input, button {
 
 .hotel__slider {
   margin-left: 0;
-  margin-right: 30px;
+  margin-right: 0;
 }
 
 .hotel-slider {
@@ -581,6 +586,11 @@ input, button {
   object-fit: cover;
 }
 
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
 .offer {
   background-color: #EC1F46;
   color: #fff;
@@ -614,6 +624,96 @@ input, button {
 
 .rattings__five {
   font-size: 10px;
+}
+
+.booking-block {
+  background-color: #0A223D;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  padding: 28px;
+  border-radius: 8px;
+  width: 350px;
+}
+
+.booking-block__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.booking-block__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-block__start {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.booking-block__pricetag {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.booking-block__per-room {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking-block__room {
+  margin-top: 4px;
+}
+
+.booking-block__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking-block__description {
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.booking-block__quick {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.booking-block__quick-booking {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.booking-block__phone {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.booking-block__num {
+  margin-left: 8px;
+}
+
+.booking-block__button {
+  width: 100%;
+  min-height: 45px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {

@@ -591,6 +591,12 @@ input, button {
   justify-content: space-between;
 }
 
+.hotel-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .offer {
   background-color: #EC1F46;
   color: #fff;
@@ -630,7 +636,7 @@ input, button {
   background-color: #0A223D;
   font-family: 'Nunito', sans-serif;
   color: #fff;
-  padding: 28px;
+  padding: 27px;
   border-radius: 8px;
   width: 350px;
 }

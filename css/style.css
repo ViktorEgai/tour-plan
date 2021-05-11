@@ -801,11 +801,11 @@ input, button {
     width: 100%;
   }
   .map {
-    width: 340px;
+    width: 48%;
     height: 210px;
   }
   .booking-block {
-    width: 340px;
+    width: 48%;
     height: 210px;
   }
 }

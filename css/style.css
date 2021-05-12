@@ -917,6 +917,7 @@ input, button {
 .reviews__button {
   width: 30px;
   height: 30px;
+  background-color: transparent;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -1004,11 +1005,11 @@ input, button {
     width: 100%;
   }
   .map {
-    width: 48%;
+    width: 49%;
     height: 210px;
   }
   .booking-block {
-    width: 48%;
+    width: 49%;
     height: 210px;
   }
   .newsletter {
@@ -1017,6 +1018,21 @@ input, button {
   .newsletter-wrapper {
     max-width: 768px;
     width: 91%;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 650px;
+    width: 80%;
+  }
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
   }
 }
 
@@ -1117,6 +1133,32 @@ input, button {
     width: 87%;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .reviews__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 42px;
+  }
+  .reviews-slider__item {
+    max-width: 650px;
+    width: 80%;
+  }
+  .reviews-slider__text {
+    max-width: 350px;
+    width: 80%;
+  }
+  .reviews__button {
+    top: 30px;
+  }
+  .reviews__button--prev {
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-left: -85px;
+  }
+  .reviews__button--next {
+    right: 50%;
+    transform: translate(50%, 0);
+    margin-right: -85px;
   }
 }
 

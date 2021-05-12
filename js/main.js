@@ -9,8 +9,21 @@ const hotelSwiper = new Swiper('.hotel-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.hotel-slider__button__next',
-    prevEl: '.hotel-slider__button__prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
+  },
+
+});
+
+const reviewsSwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+ 
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
   },
 
 });

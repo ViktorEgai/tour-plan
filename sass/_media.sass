@@ -73,9 +73,18 @@
         &::before, &::after
           display: none
       &__text
-        max-width: 455px
+        max-width: 475px
+    &__button
+      top: 52%
+      &--prev
+        left: 0
+      &--next
+        right: 0
+    &-slider
+      &__text
+        height: 133px
 
-@media (max-width:768px)
+@media (max-width:760px)
   .container
     max-width: 576px
     width: 87%
@@ -153,6 +162,9 @@
       width: 87%
       flex-direction: column
       align-items: flex-start
+  .subscribe
+    &__input
+      padding-left: 20px
   .reviews
     &__title
       font-size: 25px
@@ -161,10 +173,13 @@
     &-slider
       &__item
         max-width: 650px
-        width: 80%
+        width: 100%
+        margin-left: 0
+        margin-right: 0
       &__text
-        max-width: 350px
-        width: 80%
+        max-width: 380px
+        width: 84%
+        text-align: left
     &__button
       top: 30px
       &--prev
@@ -202,6 +217,13 @@
         line-height: 38px
   .subscribe
     max-width: 480px
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__text
+        height: 266px
 @media (max-width:370px)
   .hotel
     &__slider

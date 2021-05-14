@@ -794,18 +794,18 @@ input, button {
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
-  padding: 8px 12px;
+  padding: 8px 20px 7px 12px;
 }
 
 .card-info {
   background-color: #0A223D;
-  padding: 30px 21px 30px 32px;
+  padding: 30px 20px 30px 32px;
   color: #fff;
 }
 
 .card-info--big {
   max-width: 364px;
-  padding: 47px 21px 35px 46px;
+  padding: 38px 20px 35px 45px;
 }
 
 .card-info__stars {
@@ -828,7 +828,8 @@ input, button {
   font-weight: normal;
   font-size: 14px;
   line-height: 160.6%;
-  margin: 0 0 34px;
+  margin: 0 0 45px;
+  overflow: auto;
 }
 
 .card-info__data {
@@ -1185,9 +1186,6 @@ input, button {
   }
   .packages__title {
     margin-bottom: 50px;
-  }
-  .card-info__description {
-    overflow: auto;
   }
 }
 

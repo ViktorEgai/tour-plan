@@ -1400,6 +1400,9 @@ input, button {
     flex-direction: column;
     align-items: flex-start;
   }
+  .newsletter-title {
+    margin-bottom: 37px;
+  }
   .subscribe__input {
     padding-left: 20px;
   }
@@ -1485,7 +1488,6 @@ input, button {
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 37px;
   }
   .newsletter-title__strong {
     margin-top: 5px;

@@ -295,12 +295,13 @@
     &-wrapper
       grid-template-columns: 1fr
       grid-row-gap: 30px
+      padding-bottom: 26px
     &__logo
       max-width: 98px
       grid-row: 1
       grid-column: 1
       margin-top: 0
-      margin-bottom: 12px
+      margin-bottom: 7px
     &__social-network
       grid-row: 2
       grid-column: 1
@@ -325,21 +326,25 @@
       &-details
         grid-row: 6
         grid-column: 1
-        margin-top: 7px
-        margin-bottom: 32px
+        margin-top: 10px
+        margin-bottom: 26px
       &-form
         grid-row: 7
         grid-column: 1
     &__input
       width: 100%
     &__title
+      margin-bottom: 14px
       &--inline
         margin: 0 0 23px
       &--contact
         margin-top: 0
+        margin-bottom: 25px
       &--form
         margin-top: 0
         margin-bottom: 15px
+      &:nth-child(1)
+        margin-bottom: 18px
     &__form
       flex-direction: column
     &__message
@@ -349,6 +354,8 @@
       margin-top: 0
     &__button
       order: 1
+    &__text
+      margin-top: 25px
   .contact-details
     &__item
       column-gap: 6px
@@ -389,12 +396,11 @@
   .activities
     &-card
       width: 100%
-      &__title
-        max-width: 500px
     &-card:nth-child(1)
       order: -2
     &-card:nth-child(3)
       order: -1
+      margin-bottom: 5px
   .packages
     &-wrapper
       grid-template-rows: repeat(3, 500px)
@@ -443,3 +449,7 @@
       height: 180px
   .map
     height: 172px
+  .rights
+    &__item
+      &:not(:last-child)
+        margin-right: 10px

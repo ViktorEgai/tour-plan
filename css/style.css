@@ -1651,6 +1651,7 @@ a {
     right: 0;
     bottom: 0;
     padding-top: 31px;
+    overflow: auto;
   }
   .navbar-menu__list--mobile {
     flex-direction: column;

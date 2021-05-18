@@ -13,19 +13,19 @@
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo navbar__logo">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__img" />
           </a>
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input type="text" class="search__input" placeholder="Search location" />
             <button class="button search__button">
               <img src="img/search.svg" alt="search-button" />
             </button>
           </form>
-          <a href="" class="user navbar-user">
+          <a href="" class="user navbar-user navbar-user--mobile--hidden">
             <img src="img/avatar.jpg" alt="" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -40,26 +40,40 @@
       <!-- /.container -->
       <nav class="navbar-menu">
         <div class="container">
-          <ul class="navbar-menu__list">
-            <li class="navbar-menu__item">
+          <ul class="navbar-menu__list navbar-menu__list--mobile">
+            <li class="navbar-menu__item navbar-menu__item--mobile navbar-menu__item--mobile--visible">
+              <a href="" class="user navbar-user user--mobile--visible">
+                <img src="img/avatar.jpg" alt="" class="user__avatar" />
+                <span class="user__name">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                <input type="text" class="search__input" placeholder="Search location" />
+                <button class="button search__button">
+                  <img src="img/search.svg" alt="search-button" />
+                </button>
+              </form>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">all deals</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">hotels</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">activities</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">hotel day pachages</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">restaurants</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">events</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">rodrigues</a>
             </li>
           </ul>

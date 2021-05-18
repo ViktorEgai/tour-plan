@@ -114,7 +114,7 @@
     &-wrapper
       grid-template-columns: repeat(6,1fr)
       grid-row-gap: 48px
-      padding-bottom: 63px
+      padding-bottom: 56px
     &__logo
       max-width: 98px
       grid-row: 1 / 2
@@ -156,10 +156,19 @@
       max-width: 768px
       width: 100%
 @media (max-width:760px)
+  body
+    padding-top: 72px
   .container
     max-width: 576px
     width: 87%
   .navbar
+    &--mobile
+      &--fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
     &__logo
       width: 99px
     &-top
@@ -175,11 +184,51 @@
         cursor: pointer
         padding: 0
     &__search
-      display: none
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: block
+          margin: 0 auto 21px
+          width: 72%
+    &-user
+      &--mobile
+        &--hidden
+          display: none
     &-menu
       display: none
-    &-user
-      display: none
+      &--visible
+        display: block
+        position: fixed
+        top: 72px
+        left: 0
+        right: 0
+        bottom: 0
+        padding-top: 31px
+      &__list
+        &--mobile
+          flex-direction: column
+          align-items: center
+      &__item
+        &--mobile
+          margin-bottom: 20px
+          &--visible
+            display: block
+            width: 340px
+  .user
+    margin-bottom: 10px
+    &__avatar
+      margin-bottom: 10px
+    &__name
+      margin: 0
+      color: #fff
+      text-transform: none
+    &--mobile
+      &--visible
+        display: flex
+        flex-direction: column
+        justify-content: center
+
   .menu
     &-button
       &__line

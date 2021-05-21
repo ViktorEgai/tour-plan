@@ -507,6 +507,43 @@ a {
   color: inherit;
 }
 
+.thankyou {
+  padding: 40px;
+}
+
+.thankyou-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thankyou__block {
+  display: flex;
+  align-items: center;
+}
+
+.thankyou__text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.thankyou__img {
+  width: 50px;
+  height: 50px;
+}
+
+.thankyou__button {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+}
+
 .hotel {
   padding-top: 17px;
   padding-bottom: 70px;
@@ -1900,6 +1937,18 @@ a {
   }
   .contact-details__item {
     column-gap: 6px;
+  }
+  .thankyou {
+    padding: 20px;
+  }
+  .thankyou__text {
+    font-size: 22px;
+  }
+  .thankyou__img {
+    display: none;
+  }
+  .thankyou__button {
+    margin-top: 30px;
   }
 }
 

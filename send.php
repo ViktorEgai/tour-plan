@@ -1,22 +1,44 @@
-<?php 
-// Файлы phpmailer
+<?php
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
-
 // Переменные, которые отправляет пользователь
+$email = $_POST['email'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-// Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+
+if( $email == "" ) {
+    // Формирование самого письма
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+    header ('Location: thankyou.html');
+} elseif( $email != "" && $name == "" && $phone == "" && $message == "" ){
+    $title = "Запрос на подписку Best Tour plan";
+    $body = "
+    <h2>Новое письмо</h2>
+    <b>Электронная почта':</b> $email<br>
+    <span> хочет подписаться на обновления </span>
+    ";
+        // Отображение результата
+    header ('Location: subscribe.html');    
+} else{
+    $title = "Запрос на бронирование номера Best Tour plan";
+    $body = "
+    <h2>Новое заявка</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Электронная почта':</b> $email<br>
+    <b>Сообщение:</b><br>$message
+    ";
+    header ('Location: booking.html');
+};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -52,5 +74,12 @@ else {$result = "error";}
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
-// Отображение результата
-header ('Location: thankyou.html');
+
+
+
+
+
+
+
+
+

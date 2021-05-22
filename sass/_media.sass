@@ -504,16 +504,20 @@
     &__dialog
       width: 90%
       padding: 25px 50px
+    &__form
     &__title
       font-size: 14px
     &__input
       width: 100%
+      padding: 10px 16px
     &__message
       height: 90px
     &__bottom
       flex-wrap: wrap
     &__button
       width: 100%
+    &__info
+      order: -1
       margin-bottom: 15px
 @media (max-width:370px)
   .hotel
@@ -525,33 +529,11 @@
     &__item
       &:not(:last-child)
         margin-right: 10px
-@media (max-height:600px)
   .modal
     &__dialog
-      padding: 20px 30px
-    &__title
-      font-size: 14px
-    &__form
-      flex-direction: row
-      flex-wrap: wrap
-      justify-content: space-between
-    &__input
-      width: 48%
-      &:nth-child(3)
-        flex-basis: 100%
-    &__message
-      flex-basis: 100%
-    &__bottom
-      display: flex
       width: 100%
-@media (max-height:410px)
+@media (max-height:450px)
   .modal
     &__dialog
-      width: 90%
-      max-width: 800px
-    &__input
-      width: 31%
-      &:nth-child(3)
-        flex-basis: auto
-    &__message
-      max-height: 30vh
+      max-height: 100vh
+      overflow: auto

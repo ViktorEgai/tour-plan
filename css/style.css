@@ -783,8 +783,8 @@ textarea {
 }
 
 .booking-block__button {
-  width: 100%;
-  min-height: 45px;
+  max-width: 100%;
+  padding: 13px 84px;
   border-radius: 4px;
   font-weight: 600;
   font-size: 14px;
@@ -947,8 +947,9 @@ textarea {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  width: 120px;
-  height: 40px;
+  max-width: 120px;
+  min-height: 40px;
+  padding: 10px 26px;
   right: 21px;
   bottom: 25px;
   border-radius: 4px;
@@ -1508,6 +1509,9 @@ textarea {
   width: 160px;
   height: 50px;
   border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__info {
@@ -2135,6 +2139,7 @@ textarea {
   }
   .modal__input {
     width: 100%;
+    padding: 10px 16px;
   }
   .modal__message {
     height: 90px;
@@ -2144,6 +2149,9 @@ textarea {
   }
   .modal__button {
     width: 100%;
+  }
+  .modal__info {
+    order: -1;
     margin-bottom: 15px;
   }
 }
@@ -2158,48 +2166,15 @@ textarea {
   .rights__item:not(:last-child) {
     margin-right: 10px;
   }
-}
-
-@media (max-height: 600px) {
   .modal__dialog {
-    padding: 20px 30px;
-  }
-  .modal__title {
-    font-size: 14px;
-  }
-  .modal__form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .modal__input {
-    width: 48%;
-  }
-  .modal__input:nth-child(3) {
-    flex-basis: 100%;
-  }
-  .modal__message {
-    flex-basis: 100%;
-  }
-  .modal__bottom {
-    display: flex;
     width: 100%;
   }
 }
 
-@media (max-height: 410px) {
+@media (max-height: 450px) {
   .modal__dialog {
-    width: 90%;
-    max-width: 800px;
-  }
-  .modal__input {
-    width: 31%;
-  }
-  .modal__input:nth-child(3) {
-    flex-basis: auto;
-  }
-  .modal__message {
-    max-height: 30vh;
+    max-height: 100vh;
+    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

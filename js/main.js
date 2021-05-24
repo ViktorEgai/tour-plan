@@ -14,9 +14,9 @@ $(document).ready(function () {
     prevEl: '.hotel-slider__button--prev',
   },
 
-});
+  });
 
-const reviewsSwiper = new Swiper('.reviews-slider', {
+  const reviewsSwiper = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
  
@@ -27,38 +27,73 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
     prevEl: '.reviews__button--prev',
   },
 
-});
+  });
+// паралакс
+  $('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
 
-$('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
+  // кнопка меню
+  var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    $(".navbar-menu")
+    .toggleClass("navbar-menu--visible");
 
-var menuButton = $(".menu-button");
-menuButton.on("click", function () {
-  $(".navbar-menu")
-  .toggleClass("navbar-menu--visible");
+  });
 
-});
+  // модальное окно
+  var modalButton = $('[data-toggle=modal]');
+  modalButton.on("click", openModal);
+  function openModal() {
+    var modal = $(".modal");
+    modal.addClass("modal--visible");  
+    };
 
-var modalButton = $('[data-toggle=modal]');
-modalButton.on("click", openModal);
-function openModal() {
-  var modal = $(".modal");
-  modal.addClass("modal--visible");  
-  };
+  var closeModalButton = $(".modal__close");
+  closeModalButton.on("click", closeModal);
+  function closeModal(event) {
+    event.preventDefault();
+    var modal = $(".modal");
+    modal.removeClass("modal--visible");  
+    };
 
-var closeModalButton = $(".modal__close");
-closeModalButton.on("click", closeModal);
-function closeModal(event) {
-  event.preventDefault();
-  var modal = $(".modal");
-  modal.removeClass("modal--visible");  
-  };
+  $(document).keyup(function(e) {
+    if (e.key === "Escape" || e.keyCode === 27) {
+      e.preventDefault();
+    var modal = $(".modal");
+    modal.removeClass("modal--visible")
+    }
+  });
 
-$(document).keyup(function(e) {
-	if (e.key === "Escape" || e.keyCode === 27) {
-		e.preventDefault();
-  var modal = $(".modal");
-  modal.removeClass("modal--visible")
-	}
-});
-
+    // подключение валидации
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          minlength: "Your name must be at least 2 letters",
+          required: "We need your name to contact you",
+          name: "Please specify your name",          
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "We need your phone to contact you",
+          phone: "Your phone number must be in format of +7-XXX-XX-XX",  
+        },
+      },
+    });
+  });
+  $(".newsletter__subscribe").validate({
+      errorClass: "invalid",
+      messages: {        
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },       
+      },
+  });
+  // маска для номера телефона
+   $('.phone').mask('+7 (ZZZ) ZZZ-ZZ-ZZ', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
+   
 });

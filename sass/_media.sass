@@ -21,7 +21,8 @@
       column-gap: 10px
       grid-template-columns: minmax(120px,190px) repeat(3,minmax(200px, 1fr))
     &__input
-      width: 100%
+      &-group
+        width: 100%
 @media (max-width:992px)
   .container
     max-width: 768px
@@ -145,7 +146,8 @@
         grid-row: 4 / 5
         grid-column: span 6
     &__input
-      width: 47%
+      &-group
+        width: 47%
     &__title
       &--contact
         margin-top: 13px
@@ -382,7 +384,8 @@
         grid-row: 7
         grid-column: 1
     &__input
-      width: 100%
+      &-group
+        width: 100%
     &__title
       margin-bottom: 14px
       &--inline

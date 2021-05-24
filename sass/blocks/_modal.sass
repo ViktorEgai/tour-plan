@@ -20,14 +20,14 @@
     background-color: $dark
     padding: 33px 88px
     max-width: 478px
-    max-height: 487px
+    min-height: 487px
     border-radius: 8px
   &__close
     position: absolute
     top: 17px
     right: 18px
   &__title
-    margin: 0 0 15px
+    margin: 0
     font-style: normal
     font-weight: bold
     font-size: 18px
@@ -37,13 +37,14 @@
   &__form
     display: flex
     flex-direction: column
-    row-gap: 15px
   &__input
     width: 301px
+    margin-top: 15px
   &__message
+    margin-top: 15px
     max-height: 123px
-
   &__bottom
+    margin-top: 15px
     display: flex
     justify-content: space-between
     align-items: center

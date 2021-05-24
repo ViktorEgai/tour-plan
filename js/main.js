@@ -78,6 +78,7 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
+          minlength: "Please enter your full phone number",
           required: "We need your phone to contact you",
           phone: "Your phone number must be in format of +7-XXX-XX-XX",  
         },
@@ -94,6 +95,17 @@ $(document).ready(function () {
       },
   });
   // маска для номера телефона
-   $('.phone').mask('+7 (ZZZ) ZZZ-ZZ-ZZ', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
+ 
+   var SPMaskBehavior = function (val) {
+  return val.replace(/\D/g, '').length === 11 ? '+7 (000) 000-0000' : '+7 (000) 000-0009';
+},
+spOptions = {
+  onKeyPress: function(val, e, field, options) {
+      field.mask(SPMaskBehavior.apply({}, arguments), options);
+    }
+};
+
+$('.phone').mask(SPMaskBehavior, spOptions);
    
 });
+

@@ -366,10 +366,6 @@ input, button, textarea {
   color: #fff;
 }
 
-.button:hover {
-  background-color: #8f001f;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -450,10 +446,6 @@ textarea {
 .navbar-menu__link {
   text-decoration: none;
   color: #fff;
-}
-
-.navbar-menu__link:hover {
-  color: #EC1F46;
 }
 
 .search {
@@ -1290,11 +1282,6 @@ textarea {
   border-radius: 50%;
 }
 
-.footer__social-icon:hover {
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
 .footer__legal {
   justify-self: end;
   margin-right: 5px;
@@ -1351,11 +1338,6 @@ textarea {
 .footer__link {
   text-decoration: none;
   color: inherit;
-}
-
-.footer__link:hover {
-  color: #fff;
-  text-decoration: underline;
 }
 
 .footer__text {
@@ -1762,6 +1744,26 @@ textarea {
   .rights-wrapper {
     max-width: 768px;
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .button:hover {
+    background-color: #8f001f;
+  }
+  .navbar-menu__link:hover {
+    color: #EC1F46;
+  }
+  .user__name:hover {
+    color: #EC1F46;
+  }
+  .footer__social-icon:hover {
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  .footer__link:hover {
+    color: #fff;
+    text-decoration: underline;
   }
 }
 

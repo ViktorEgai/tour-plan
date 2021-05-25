@@ -157,6 +157,29 @@
     &-wrapper
       max-width: 768px
       width: 100%
+@media (min-width:992px)
+  .button
+    &:hover
+      background-color: #8f001f
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: $primary
+  .user
+    &__name
+      &:hover
+        color: $primary
+  .footer
+    &__social
+      &-icon
+        &:hover
+          border: 1px solid $light
+          border-radius: 50%
+    &__link
+      &:hover
+        color: $light
+        text-decoration: underline
 @media (max-width:760px)
   body
     padding-top: 72px

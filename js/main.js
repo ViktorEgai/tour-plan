@@ -107,5 +107,7 @@ spOptions = {
 
 $('.phone').mask(SPMaskBehavior, spOptions);
    
+  // инициализация библиотеки анимации
+  AOS.init();
 });
 

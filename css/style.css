@@ -1446,6 +1446,10 @@ textarea {
   color: inherit;
 }
 
+.rights__fb:hover {
+  color: red;
+}
+
 .modal {
   visibility: hidden;
 }

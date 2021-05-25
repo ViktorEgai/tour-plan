@@ -108,6 +108,11 @@ spOptions = {
 $('.phone').mask(SPMaskBehavior, spOptions);
    
   // инициализация библиотеки анимации
-  AOS.init();
+  AOS.init({
+  disable: function() {
+    var maxWidth = 992;
+    return window.innerWidth < maxWidth;
+  }
+});
 });
 

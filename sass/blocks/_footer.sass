@@ -28,6 +28,12 @@
       width: 83px
       align-items: center
       justify-content: space-between
+    &-icon
+      border: 1px solid transparent
+      border-radius: 50%
+      &:hover
+        border: 1px solid $light
+        border-radius: 50%
   &__legal
     justify-self: end
     margin-right: 5px
@@ -66,6 +72,9 @@
   &__link
     text-decoration: none
     color: inherit
+    &:hover
+      color: $light
+      text-decoration: underline
   &__text
     margin: 0 0 22px
     font-weight: normal
@@ -114,6 +123,10 @@
     width: 20px
     &:nth-child(1)
       width: 24px
+  &__link
+    &:hover
+      color: $light
+      text-decoration: underline
 .rights
   display: flex
   align-items: center
@@ -139,7 +152,6 @@
   &__link
     text-decoration: none
     color: inherit
-
-  &__fb
     &:hover
-      color: red
+      color: $light
+      text-decoration: underline

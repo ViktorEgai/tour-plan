@@ -29,7 +29,7 @@ $(document).ready(function () {
 
   });
 // паралакс
-  $('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
+  $('.newsletter').parallax({imageSrc: 'img/newsletter-bg-700.jpg'});
 
   // кнопка меню
   var menuButton = $(".menu-button");
@@ -113,6 +113,8 @@ $('.phone').mask(SPMaskBehavior, spOptions);
     var maxWidth = 992;
     return window.innerWidth < maxWidth;
   }
-});
+  });
+  
+  document.addEventListener('touchstart', onTouchStart, {passive: true});
 });
 

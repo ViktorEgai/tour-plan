@@ -241,6 +241,10 @@
           &--visible
             display: block
             width: 340px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
   .user
     margin-bottom: 10px
     &__avatar
@@ -545,7 +549,26 @@
       order: -1
       margin-bottom: 15px
 @media (max-width:370px)
+  .navbar
+    &-menu
+      &__item
+        &--mobile
+          &--visible
+            max-width: 340px
+            width: 100%
+    &__search
+      &--mobile
+        &--visible
+          width: 100%
   .hotel
+    &-slider
+      &__button
+        width: 9px
+        height: 9px
+        &--prev
+          margin-left: 16px
+        &--next
+          margin-right: 16px
     &__slider
       height: 180px
   .map
